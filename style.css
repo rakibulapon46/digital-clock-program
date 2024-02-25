@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: url(./img/wallpaper.jpg);
+  background-size: cover;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.clock_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#clock {
+  font-size: clamp(3.5rem, 17vw, 6.5rem);
+  color: crimson;
+  background-color: hsla(0, 1%, 62%, 0.251);
+  width: 100%;
+  height: clamp(20vh, 100vh, 40vh);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  font-weight: 500;
+}
